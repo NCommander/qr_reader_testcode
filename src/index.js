@@ -92,3 +92,5 @@ fileSelector.addEventListener('change', event => {
     .then(result => setResult(fileQrResult, result))
     .catch(e => setResult(fileQrResult, e || 'No QR code found.'));
 });
+
+QrScannerLib.WORKER_PATH = QrScannerWorkerPath;
